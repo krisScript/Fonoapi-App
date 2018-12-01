@@ -1,0 +1,31 @@
+.form-section {
+  @include flex-center;
+  width: 100vw;
+  height: 25vh;
+  .search-form {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    input {
+      width: 100%;
+      font-size: 1.3rem;
+      border: none;
+      border-bottom: solid lighten($dark, 30%) 2px;
+      outline: none;
+      &:hover {
+        border-bottom-color: $primary;
+      }
+    }
+
+    button {
+      @include button(6rem, 3rem, $light, $primary, 1.2rem);
+      &:hover {
+        @include button(6rem, 3rem, $primary, $light, 1.2rem);
+        border: solid 1px $primary;
+      }
+    }
+  }
+}
