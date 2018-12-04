@@ -43,7 +43,6 @@ describe('index', () => {
       model: 'p70'
     };
     let deviceCard;
-    let tbodyChildren 
     beforeAll(async () => {
       await page.waitForSelector('.search-form');
       await page.type('input[name=brand]', device.brand);
